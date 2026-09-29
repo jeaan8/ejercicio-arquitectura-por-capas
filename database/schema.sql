@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS tickets_capas
+    CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE tickets_capas;
+
+CREATE TABLE IF NOT EXISTS ticket (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    descripcion TEXT NOT NULL,
+    estado VARCHAR(20) NOT NULL
+) ENGINE=InnoDB;
